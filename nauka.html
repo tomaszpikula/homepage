@@ -1,56 +1,152 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
-</head>
+    <link rel="stylesheet" href="CSS/normalize.css" type="text/css" />
+    <link rel="stylesheet" href="CSS/style.css" type="text/css" />
+  </head>
 
-<body>
-
-    <header class="navigation-container">
-        <nav class="navigation-nav">
-            <a class="navigation-link" href="index.html">Strona główna</a>
-            <a class="navigation-link" href="nauka.html">Dziennik nauki</a>
-        </nav>
+  <body>
+    <header class="header">
+      <button class="hamburger hamburger--js" aria-label="Otwórz menu">MENU</button>
+      <nav class="navigation">
+        <a class="navigation__link navigation__link--homepage" href="index.html"
+          >Strona główna</a
+        >
+        <a class="navigation__link" href="nauka.html">Dziennik nauki</a>
+      </nav>
     </header>
 
-    <main class="main-container">
-        <header class="main-header">
-            <h1 class="main-heading">Dziennik nauki</h1>
-        </header>
-        <section class="section">
-            <h2 class="section-heading">Omówienie</h2>
-            <article class="article">
-                <h3 class="article-heading">Sposób wprowadzania danych</h3>
-                <p class="article-content">Wyjaśnienie....</p>
-            </article>
-        </section>
-        <section class="section">
-            <h2 class="section-heading">Dzień 1</h2>
-            <article class="article">
-                <h3 class="article-heading">HTML</h3>
-                <p class="article-content">Składnia, znaczniki (main, header, section, article, nav, h1-h6, p, a, img), atrybuty (href, src, alt)</p>
-                <h3 class="article-heading">CSS</h3>
-                <p class="article-content">Składnia, selektory, właściwości (color, background)</p>
-            </article>
-            <h2 class="section-heading">Dzień 2</h2>
-            <article class="article">
-                <h3 class="article-heading">HTML</h3>
-                <p class="article-content">Atrybuty (class, id)</p>
-                <h3 class="article-heading">CSS</h3>
-                <p class="article-content">Selektory (.class, #id), specyficzność w CSS</p>
-                <h3 class="article-heading">JS</h3>
-                <p class="article-content">Polecenia (alert, console.log), zmienne</p>
-            </article>
-        </section>
-    </main>
-    <footer class="footer">
-        Strona domowa utworzona podczas szkolenia.
-    </footer>
-    <script src="main.js"></script>
-</body>
+    <main class="main">
+      <header class="main__header">
+        <h1 class="main__heading">Dziennik nauki</h1>
+      </header>
 
+      <section class="introduction">
+        <h2 class="introduction__heading">Sposób prowadzenia dziennika</h2>
+        <p class="introduction__description">
+          Tematy przerabiane każdego dnia są wpisywane w tym dzienniku. Nie są
+          to kolejne dni kalendarzowe lecz dni w których poświęcono minimum 1
+          godzinę na naukę.
+        </p>
+      </section>
+
+      <section class="diary">
+        <h2 class="diary__heading">Dziennik</h2>
+        <div class="grid__diary">
+          <article class="day">
+            <h3 class="day__counter">Dzień 1</h3>
+            <h4 class="day__language day__language--html">HTML</h4>
+            <p class="day__description">
+              Składnia, znaczniki (main, header, section, article, nav, h1-h6,
+              p, a, img), atrybuty (href, src, alt)
+            </p>
+            <h4 class="day__language day__language--css">CSS</h4>
+            <p class="day__description">
+              Składnia, selektory, właściwości (color, background)
+            </p>
+          </article>
+          <article class="day">
+            <h3 class="day__counter">Dzień 2</h3>
+            <h4 class="day__language day__language--html">HTML</h4>
+            <p class="day__description">Atrybuty (class, id)</p>
+            <h4 class="day__language day__language--css">CSS</h4>
+            <p class="day__description">
+              Selektory (.class, #id), specyficzność w CSS
+            </p>
+            <h4 class="day__language day__language--js">JS</h4>
+            <p class="day__description">
+              Polecenia (alert, console.log), zmienne
+            </p>
+          </article>
+          <article class="day">
+            <h3 class="day__counter">Dzień 3</h3>
+            <h4 class="day__language day__language--css">CSS</h4>
+            <p class="day__description">
+              Właściwości (display, width, height, overflow)
+            </p>
+            <h4 class="day__tools">Inne</h4>
+            <p class="day__description">Git, Github</p>
+          </article>
+          <article class="day">
+            <h3 class="day__counter">Dzień 4</h3>
+            <h4 class="day__language day__language--css">CSS</h4>
+            <p class="day__description">
+              Właściwości (padding, border, margin, box-sizing, position,
+              z-index, float)
+            </p>
+            <h4 class="day__language day__language--js">JS</h4>
+            <p class="day__description">
+              Typy danych (string, number, bigint, boolean, null, undefined),
+              funkcja querySelector, innerHTML
+            </p>
+          </article>
+          <article class="day">
+            <h3 class="day__counter">Dzień 5</h3>
+            <p class="day__description day__description--practice">
+              Ćwiczenia praktyczne
+            </p>
+          </article>
+          <article class="day">
+            <h3 class="day__counter">Dzień 6</h3>
+            <h4 class="day__language day__language--js">JS</h4>
+            <p class="day__description">Funkcje, obiekty</p>
+          </article>
+          <article class="day">
+            <h3 class="day__counter">Dzień 7</h3>
+            <h4 class="day__language day__language--html">HTML</h4>
+            <p class="day__description">Listy, tabele</p>
+          </article>
+          <article class="day">
+            <h3 class="day__counter">Dzień 8</h3>
+            <h4 class="day__language day__language--css">CSS</h4>
+            <p class="day__description">
+              Reset, normalizacja, flexbox, background
+            </p>
+          </article>
+          <article class="day">
+            <h3 class="day__counter">Dzień 9</h3>
+            <p class="day__description day__description--practice">
+              Ćwiczenia praktyczne
+            </p>
+          </article>
+          <article class="day">
+            <h3 class="day__counter">Dzień 10</h3>
+            <p class="day__description day__description--practice">
+              Ćwiczenia praktyczne
+            </p>
+            <h4 class="day__language day__language--js">JS</h4>
+            <p class="day__description">Logika</p>
+          </article>
+          <article class="day">
+            <h3 class="day__counter">Dzień 11</h3>
+            <h4 class="day__language day__language--html">HTML</h4>
+            <p class="day__description">Formularze</p>
+            <h4 class="day__language day__language--css">CSS</h4>
+            <p class="day__description">Grid, media queries</p>
+            <h4 class="day__language day__language--js">JS</h4>
+            <p class="day__description">Eventy</p>
+          </article>
+          <article class="day">
+            <h3 class="day__counter">Dzień 12</h3>
+            <p class="day__description day__description--practice">
+              Ćwiczenia praktyczne - hamburger menu
+            </p>
+          </article>
+          <article class="day">
+            <h3 class="day__counter">Dzień 13</h3>
+            <p class="day__description day__description--practice">
+              Ćwiczenia praktyczne - formularze
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">Strona domowa utworzona podczas szkolenia.</footer>
+
+    <script src="main.js"></script>
+  </body>
 </html>

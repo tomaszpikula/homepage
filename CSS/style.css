@@ -1,0 +1,147 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+background-color: #FAACA8;
+background-image: linear-gradient(180deg, #FAACA8 0%, #DDD6F3 100%);
+}
+
+.day {
+border-style: solid;
+border-color: black;
+padding: 8px;
+text-align: center;
+}
+
+.day__language {
+    color: darkgreen;
+}
+
+.diary__heading {
+text-align: center;
+}
+
+.footer {
+    text-align: center;
+    margin: 16px;
+}
+
+.grid__diary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 8px;
+    row-gap: 8px;
+}
+
+.hamburger {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.header {
+    background: #fff;
+    min-height: 60px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.introduction__description {
+    text-align: center;
+}
+
+
+.introduction__heading {
+    text-align: center;
+}
+
+.introduction__image {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+
+}
+
+.knowledge {
+    border-style: solid;
+    border-color: black;
+    padding: 8px;
+    text-align: center;
+}
+
+.main {
+    max-width: 1000px;
+    margin: 60px auto 0;
+}
+
+.main__heading {
+    color: #1e8073;
+    text-align: center;
+}
+
+.navigation {
+    background:#DDD6F3;
+    padding: 16px;
+    display: none;
+}
+
+.navigation__link {
+    color:rgb(14, 90, 167);
+    display: block;
+    margin: 0 0 16px;
+}
+
+.navigation__link--homepage {
+    color: red;
+}
+
+.navigation--open {
+    display: block;
+}
+
+.summary__heading {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+
+.grid__diary {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 16px;
+    row-gap: 16px;
+}
+
+.grid__summary {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 16px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.navigation {
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    align-items: center;
+}
+
+.navigation__link {
+    display: inline-block;
+    margin: 0 20px 0 0;
+}
+
+    
+}

@@ -1,58 +1,55 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
-</head>
-
-<body>
-
-    <header class="navigation-container">
-        <nav class="navigation-nav">
-            <a class="navigation-link" href="index.html">Strona główna</a>
-            <a class="navigation-link" href="nauka.html">Dziennik nauki</a>
-        </nav>
+    <link rel="stylesheet" href="CSS/normalize.css" type="text/css" />
+    <link rel="stylesheet" href="CSS/style.css" type="text/css" />
+  </head>
+  <body>
+    <header class="header">
+      <button class="hamburger hamburger--js" aria-label="Otwórz menu">MENU</button>
+      <nav class="navigation navigation--js">
+        <a class="navigation__link navigation__link--homepage" href="index.html">Strona główna</a>
+        <a class="navigation__link" href="nauka.html">Dziennik nauki</a>
+      </nav>
     </header>
-
-    <main class="main-container">
-        <header class="main-header">
-            <h1 class="main-heading">Strona domowa</h1>
-        </header>
-        <section class="section">
-            <h2 class="section-heading">Wstęp</h2>
-            <img class="section-image" src="2021.jpg" alt="rok 2021"/>
-            <article class="article">
-                <h3 class="article-heading">Nagłówek artykułu</h3>
-                <p class="article-content">Treść artykułu</p>
-            </article>
-        </section>
-        <section>
-            <h2 class="section-heading">Podsumowanie nauki</h2>
-            <article class="article">
-                <h3 class="article-heading">HTML</h3>
-                <p class="article-content">Składnia, znaczniki, atrybuty</p>
-            </article>
-            <article class="article">
-                <h3 class="article-heading">CSS</h3>
-                <p class="article-content">Składnia, selektory, właściwości</p>
-            </article>
-            <article class="article">
-                <h3 class="article-heading">JS</h3>
-                <p class="article-content">Polecenia</p>
-            </article>
-            <article class="article">
-                <h3 class="article-heading">Inne</h3>
-                <p class="article-content" >...</p>
-            </article>
-        </section>
+    <main class="main">
+      <header class="main__header">
+        <h1 class="main__heading">Strona domowa</h1>
+      </header>
+      <section class="introduction">
+        <h2 class="introduction__heading">Wstęp</h2>
+        <img class="introduction__image" src="2021.jpg" alt="rok 2021" />
+        <p class="introduction__description">Treść artykułu</p>
+        <p class="introduction__description introduction__description--js"></p>
+      </section>
+      <section class="summary">
+        <h2 class="summary__heading">Podsumowanie nauki</h2>
+        <div class="grid__summary">
+          <article class="knowledge">
+            <h3 class="knowledge__heading">HTML</h3>
+            <p class="knowledge__description">Składnia, znaczniki, atrybuty</p>
+          </article>
+          <article class="knowledge">
+            <h3 class="knowledge__heading">CSS</h3>
+            <p class="knowledge__description">
+              Składnia, selektory, właściwości
+            </p>
+          </article>
+          <article class="knowledge">
+            <h3 class="knowledge__heading">JS</h3>
+            <p class="knowledge__description">Polecenia</p>
+          </article>
+          <article class="knowledge">
+            <h3 class="knowledge__heading">Inne</h3>
+            <p class="knowledge__description">Git, Github</p>
+          </article>
+        </div>
+      </section>
     </main>
-    <footer class="footer">
-        Strona domowa utworzona podczas szkolenia.
-    </footer>
+    <footer class="footer">Strona domowa utworzona podczas szkolenia.</footer>
     <script src="main.js"></script>
-</body>
-
+  </body>
 </html>
